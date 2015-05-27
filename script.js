@@ -130,3 +130,45 @@ var sayName = function() {
     console.log(this);
 }
 //sayName(); **will log window global object
+
+
+/*
+    Toy Probem:
+    Write a function called combinator that is given two arrays as arguments. The first array is an array of first
+    names, and the second array is an array of last names. Have the function return a new array combining the first
+    names and the last names.
+*/
+var first = ['Tyler', 'Shawn', 'Ean', 'Angela'];
+var last = ['McGinnis', 'Chambless', 'Not-Sure', 'Also-Chambless'];
+
+var combinator = function(arr1, arr2, newArr) {
+
+    var newArr = [];
+
+    for (var i = 0; i < arr1.length; i++) {
+        newArr.push(first[i] + " " + last[i]);
+    }
+    return newArr;
+}
+combinator(first, last);
+
+
+//Callbacks
+
+var func = function() {
+    setTimeout(function() {
+        console.log('Juicebox');
+        setTimeout(function() {
+            console.log("Callback");
+        }, 1000);
+    }, 1000);
+};
+func();
+
+var cb = function(num) {
+    console.log(num * 4000000);
+};
+var newFunc = function(callback) {
+    callback;
+};
+newFunc(cb(47));
