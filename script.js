@@ -172,3 +172,18 @@ var newFunc = function(callback) {
     callback;
 };
 newFunc(cb(47));
+
+//Toy Problem Week 2, Day 4
+
+//Write a funciton that takes an array and replaces all of the odd numbers with the letter 'o'.
+//Worked on the first try
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+var replaces = function(array) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] % 2 !== 0) {
+            array.splice(i, 1, 'o');
+        }
+    }
+    return array;
+}
+replaces(numbers);
