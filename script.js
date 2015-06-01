@@ -1,4 +1,4 @@
-//make a function that makes a new object
+//make a function that makes a new object.
 
 var makePerson = function(name, age, weight) {
     return {
