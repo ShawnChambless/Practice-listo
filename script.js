@@ -187,3 +187,13 @@ var replaces = function(array) {
     return array;
 }
 replaces(numbers);
+
+// Factorial: Write a function that takes in a number and returns the factorial of that number. Ex: factorial(5) returns 120 because 5*4*3*2*1 === 120
+
+var factorial = function(num) {
+    var num2=1;
+    for (var i = 2; i <= num; i++)
+        num2 = num2 * i;
+    return num2;
+};
+factorial();
