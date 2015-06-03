@@ -197,3 +197,20 @@ var factorial = function(num) {
     return num2;
 };
 factorial();
+
+/*Week 3 day 3 Toy Problem
+    Write a function called simpleSymbols that takes in a string parameter and determines
+    if it is an acceptable sequence by either returning the string true or false. the str parameter wiill be
+    composed of + and = symbols with several letters between them (ie. ++d+===+c++==a) and for
+    the string to be true each letter must be surrounded by a + smbol. The string to the left would be false.
+    The string iwll not be empty and will have at lease one letter.
+*/
+
+var simpleSymbols = function(str) {
+    for (var i = 0; i < str.length; i++){
+
+
+
+    }
+}
+simpleSymbols('+s+=+d+');
