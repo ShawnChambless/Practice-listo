@@ -1,0 +1,1 @@
+var app=angular.module("todoApp");app.service("mainService",function(){this.title="Work Todo List",this.list=[],this.addItem=function(){newItem&&(this.list.push(newItem),newItem="")},this.removeItem=function(){var t=this.list.indexOf(thingToRemove);-1!==t&&(this.list.splice(t,1),thingToRemove=" ")}});
